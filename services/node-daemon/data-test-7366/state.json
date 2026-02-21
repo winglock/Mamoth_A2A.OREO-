@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "version": "0.2.0",
+    "createdAt": "2026-02-18T16:34:49.142Z",
+    "nodeId": "node_1771432489144_46511"
+  },
+  "config": {
+    "claimCooldownSec": 86400,
+    "maxRunBaseFee": 100000,
+    "peerSyncIntervalSec": 20,
+    "peerSyncTimeoutMs": 7000
+  },
+  "agents": {
+    "agent_1771432490331_63548": {
+      "agentId": "agent_1771432490331_63548",
+      "name": "auto-wallet-buyer",
+      "topics": [
+        "saas"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.5,
+      "treasury": {
+        "ownerClaimable": 0,
+        "operatingReserve": 0,
+        "lockedSafety": 0,
+        "claimPending": 0,
+        "assets": {
+          "USDC": {
+            "ownerClaimable": 0,
+            "operatingReserve": 0,
+            "lockedSafety": 0,
+            "claimPending": 0
+          },
+          "USDT": {
+            "ownerClaimable": 0,
+            "operatingReserve": 0,
+            "lockedSafety": 0,
+            "claimPending": 0
+          }
+        }
+      },
+      "wallet": {
+        "spendable": 0,
+        "spent": 0,
+        "earnedGross": 0,
+        "assets": {
+          "USDC": 8,
+          "USDT": 0
+        },
+        "spentAssets": {
+          "USDC": 2,
+          "USDT": 0
+        },
+        "earnedGrossAssets": {
+          "USDC": 0,
+          "USDT": 0
+        },
+        "addresses": {
+          "eth": "0x01a93dd15229625ddcafc3e55698e4ebc25965a4"
+        }
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0,
+        "blockedSenders": []
+      },
+      "createdAt": "2026-02-18T16:34:50.335Z",
+      "updatedAt": "2026-02-18T16:34:50.904Z"
+    },
+    "agent_1771432490540_12209": {
+      "agentId": "agent_1771432490540_12209",
+      "name": "auto-wallet-expert",
+      "topics": [
+        "saas"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.49,
+      "treasury": {
+        "ownerClaimable": 0,
+        "operatingReserve": 0,
+        "lockedSafety": 0,
+        "claimPending": 0,
+        "assets": {
+          "USDC": {
+            "ownerClaimable": 0.78,
+            "operatingReserve": 0.78,
+            "lockedSafety": 0.39,
+            "claimPending": 0
+          },
+          "USDT": {
+            "ownerClaimable": 0,
+            "operatingReserve": 0,
+            "lockedSafety": 0,
+            "claimPending": 0
+          }
+        }
+      },
+      "wallet": {
+        "spendable": 0,
+        "spent": 0,
+        "earnedGross": 0,
+        "assets": {
+          "USDC": 0,
+          "USDT": 0
+        },
+        "spentAssets": {
+          "USDC": 0,
+          "USDT": 0
+        },
+        "earnedGrossAssets": {
+          "USDC": 1.95,
+          "USDT": 0
+        },
+        "addresses": {
+          "eth": "0xad9914e78a6f04e4c22ec26960355f559d86e616"
+        }
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0,
+        "blockedSenders": []
+      },
+      "createdAt": "2026-02-18T16:34:50.540Z",
+      "updatedAt": "2026-02-18T16:34:50.904Z"
+    }
+  },
+  "intents": {},
+  "actions": {},
+  "messages": {},
+  "claims": {},
+  "peers": {},
+  "market": {
+    "offers": {
+      "offer_1771432490778_7798": {
+        "offerId": "offer_1771432490778_7798",
+        "agentId": "agent_1771432490540_12209",
+        "topic": "saas",
+        "mode": "PAID",
+        "asset": "USDC",
+        "pricePerQuestion": 2,
+        "qualityHint": 0.9,
+        "status": "ACTIVE",
+        "createdAt": "2026-02-18T16:34:50.778Z",
+        "updatedAt": "2026-02-18T16:34:50.778Z"
+      }
+    },
+    "asks": {
+      "ask_1771432490902_81220": {
+        "askId": "ask_1771432490902_81220",
+        "requesterAgentId": "agent_1771432490331_63548",
+        "topic": "saas",
+        "question": "best annual plan",
+        "asset": "USDC",
+        "maxBudget": 5,
+        "strategy": "best_value",
+        "status": "DELIVERED",
+        "selectedOfferId": "offer_1771432490778_7798",
+        "selectedProviderAgentId": "agent_1771432490540_12209",
+        "selectedPrice": 2,
+        "answer": "[Detailed answer] auto-wallet-expert answered on saas. Question: \"best annual plan\". Confidence 55%. Includes summary, checks, and risks.",
+        "confidence": 0.55,
+        "createdAt": "2026-02-18T16:34:50.902Z",
+        "updatedAt": "2026-02-18T16:34:50.904Z",
+        "deliveredAt": "2026-02-18T16:34:50.904Z"
+      }
+    },
+    "executions": {
+      "mx_1771432490903_86171": {
+        "executionId": "mx_1771432490903_86171",
+        "askId": "ask_1771432490902_81220",
+        "requesterAgentId": "agent_1771432490331_63548",
+        "providerAgentId": "agent_1771432490540_12209",
+        "offerId": "offer_1771432490778_7798",
+        "mode": "PAID",
+        "asset": "USDC",
+        "price": 2,
+        "qualitySignal": 0.55,
+        "answer": "[Detailed answer] auto-wallet-expert answered on saas. Question: \"best annual plan\". Confidence 55%. Includes summary, checks, and risks.",
+        "repBefore": 0.5,
+        "repAfter": 0.49,
+        "settlement": {
+          "asset": "USDC",
+          "price": 2,
+          "payerSpendableBefore": 10,
+          "payerSpendableAfter": 8,
+          "taxBps": 250,
+          "platformTax": 0.05,
+          "providerNet": 1.95,
+          "ownerClaimable": 0.78,
+          "operatingReserve": 0.78,
+          "lockedSafety": 0.39
+        },
+        "createdAt": "2026-02-18T16:34:50.904Z"
+      }
+    }
+  },
+  "platform": {
+    "label": "mammoth_protocol",
+    "taxBps": 250,
+    "treasury": {
+      "CREDIT": 0,
+      "assets": {
+        "USDC": 0.05,
+        "USDT": 0
+      }
+    }
+  },
+  "crypto": {
+    "deposits": {}
+  },
+  "events": [
+    {
+      "eventId": "evt_1771432490335_91679",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T16:34:50.335Z",
+      "payload": {
+        "agentId": "agent_1771432490331_63548",
+        "name": "auto-wallet-buyer",
+        "topics": [
+          "saas"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771432490335_83411",
+      "eventType": "agent_wallet_generated",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T16:34:50.335Z",
+      "payload": {
+        "agentId": "agent_1771432490331_63548",
+        "chain": "ETH",
+        "address": "0x01a93dd15229625ddcafc3e55698e4ebc25965a4",
+        "mode": "auto_on_register"
+      }
+    },
+    {
+      "eventId": "evt_1771432490540_4732",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T16:34:50.540Z",
+      "payload": {
+        "agentId": "agent_1771432490540_12209",
+        "name": "auto-wallet-expert",
+        "topics": [
+          "saas"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771432490540_37450",
+      "eventType": "agent_wallet_generated",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T16:34:50.540Z",
+      "payload": {
+        "agentId": "agent_1771432490540_12209",
+        "chain": "ETH",
+        "address": "0xad9914e78a6f04e4c22ec26960355f559d86e616",
+        "mode": "auto_on_register"
+      }
+    },
+    {
+      "eventId": "evt_1771432490654_94575",
+      "eventType": "agent_funded",
+      "actorRole": "owner",
+      "timestamp": "2026-02-18T16:34:50.654Z",
+      "payload": {
+        "agentId": "agent_1771432490331_63548",
+        "asset": "USDC",
+        "amount": 10,
+        "assetBalanceBefore": 0,
+        "assetBalanceAfter": 10,
+        "note": "owner_funding"
+      }
+    },
+    {
+      "eventId": "evt_1771432490778_15096",
+      "eventType": "market_offer_upserted",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T16:34:50.778Z",
+      "payload": {
+        "offerId": "offer_1771432490778_7798",
+        "agentId": "agent_1771432490540_12209",
+        "topic": "saas",
+        "mode": "PAID",
+        "asset": "USDC",
+        "pricePerQuestion": 2
+      }
+    },
+    {
+      "eventId": "evt_1771432490902_68426",
+      "eventType": "market_ask_created",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T16:34:50.902Z",
+      "payload": {
+        "askId": "ask_1771432490902_81220",
+        "requesterAgentId": "agent_1771432490331_63548",
+        "topic": "saas",
+        "asset": "USDC",
+        "maxBudget": 5
+      }
+    },
+    {
+      "eventId": "evt_1771432490903_57112",
+      "eventType": "market_quote_selected",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T16:34:50.903Z",
+      "payload": {
+        "askId": "ask_1771432490902_81220",
+        "offerId": "offer_1771432490778_7798",
+        "requesterAgentId": "agent_1771432490331_63548",
+        "providerAgentId": "agent_1771432490540_12209",
+        "price": 2,
+        "mode": "PAID",
+        "asset": "USDC"
+      }
+    },
+    {
+      "eventId": "evt_1771432490903_41355",
+      "eventType": "market_tax_collected",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T16:34:50.903Z",
+      "payload": {
+        "askId": "ask_1771432490902_81220",
+        "executionId": "mx_1771432490903_86171",
+        "asset": "USDC",
+        "platformTax": 0.05,
+        "taxBps": 250,
+        "providerNet": 1.95,
+        "label": "mammoth_protocol"
+      }
+    },
+    {
+      "eventId": "evt_1771432490904_17455",
+      "eventType": "market_settlement_posted",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T16:34:50.904Z",
+      "payload": {
+        "askId": "ask_1771432490902_81220",
+        "executionId": "mx_1771432490903_86171",
+        "providerAgentId": "agent_1771432490540_12209",
+        "requesterAgentId": "agent_1771432490331_63548",
+        "asset": "USDC",
+        "price": 2,
+        "payerSpendableBefore": 10,
+        "payerSpendableAfter": 8,
+        "taxBps": 250,
+        "platformTax": 0.05,
+        "providerNet": 1.95,
+        "ownerClaimable": 0.78,
+        "operatingReserve": 0.78,
+        "lockedSafety": 0.39
+      }
+    },
+    {
+      "eventId": "evt_1771432490904_23539",
+      "eventType": "market_answer_delivered",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T16:34:50.904Z",
+      "payload": {
+        "askId": "ask_1771432490902_81220",
+        "executionId": "mx_1771432490903_86171",
+        "providerAgentId": "agent_1771432490540_12209",
+        "requesterAgentId": "agent_1771432490331_63548",
+        "asset": "USDC",
+        "price": 2,
+        "qualitySignal": 0.55
+      }
+    }
+  ]
+}

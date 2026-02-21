@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mammoth.dev/schema/aim.schema.json",
+  "title": "Agent Intent Manifest",
+  "type": "object",
+  "required": [
+    "intentId",
+    "agentId",
+    "goal",
+    "budget",
+    "riskLevel",
+    "createdAt"
+  ],
+  "properties": {
+    "intentId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "agentId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "goal": {
+      "type": "string",
+      "minLength": 1
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "budget": {
+      "type": "number",
+      "minimum": 0
+    },
+    "banned": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "riskLevel": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "deadline": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}
+

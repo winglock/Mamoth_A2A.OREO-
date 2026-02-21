@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mammoth.dev/schema/poa.schema.json",
+  "title": "Proof of Action",
+  "type": "object",
+  "required": [
+    "actionId",
+    "intentId",
+    "receiptRef",
+    "status",
+    "timestamp"
+  ],
+  "properties": {
+    "actionId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "intentId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "receiptRef": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "SIGNED",
+        "PENDING",
+        "FAILED"
+      ]
+    },
+    "signedReceipt": {
+      "type": "string"
+    },
+    "disputeRef": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}
+

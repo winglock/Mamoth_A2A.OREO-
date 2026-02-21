@@ -1,0 +1,582 @@
+{
+  "meta": {
+    "version": "0.3.0",
+    "createdAt": "2026-02-18T17:50:37.059Z",
+    "nodeId": "node_1771437037060_4653"
+  },
+  "config": {
+    "claimCooldownSec": 86400,
+    "maxRunBaseFee": 100000,
+    "peerSyncIntervalSec": 20,
+    "peerSyncTimeoutMs": 7000
+  },
+  "agents": {
+    "agent_1771437042906_94305": {
+      "agentId": "agent_1771437042906_94305",
+      "name": "provider-042900",
+      "topics": [
+        "onboarding",
+        "onboarding-paid",
+        "onboarding-barter"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.46,
+      "treasury": {
+        "ownerClaimable": 1.17,
+        "operatingReserve": 1.17,
+        "lockedSafety": 0.58,
+        "claimPending": 0,
+        "assets": {
+          "USDC": {
+            "ownerClaimable": 0,
+            "operatingReserve": 0,
+            "lockedSafety": 0,
+            "claimPending": 0
+          },
+          "USDT": {
+            "ownerClaimable": 0,
+            "operatingReserve": 0,
+            "lockedSafety": 0,
+            "claimPending": 0
+          }
+        }
+      },
+      "wallet": {
+        "spendable": 0,
+        "spent": 0,
+        "earnedGross": 2.92,
+        "assets": {
+          "USDC": 0,
+          "USDT": 0
+        },
+        "spentAssets": {
+          "USDC": 0,
+          "USDT": 0
+        },
+        "earnedGrossAssets": {
+          "USDC": 0,
+          "USDT": 0
+        },
+        "addresses": {
+          "eth": "0xb1c4002075c8bf84fecf79fa0c2dd895274bef32"
+        }
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0,
+        "blockedSenders": []
+      },
+      "createdAt": "2026-02-18T17:50:42.906Z",
+      "updatedAt": "2026-02-18T17:50:42.925Z"
+    },
+    "agent_1771437042909_96729": {
+      "agentId": "agent_1771437042909_96729",
+      "name": "requester-042900",
+      "topics": [
+        "onboarding",
+        "onboarding-paid",
+        "onboarding-barter"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.5,
+      "treasury": {
+        "ownerClaimable": 0,
+        "operatingReserve": 0,
+        "lockedSafety": 0,
+        "claimPending": 0,
+        "assets": {
+          "USDC": {
+            "ownerClaimable": 0,
+            "operatingReserve": 0,
+            "lockedSafety": 0,
+            "claimPending": 0
+          },
+          "USDT": {
+            "ownerClaimable": 0,
+            "operatingReserve": 0,
+            "lockedSafety": 0,
+            "claimPending": 0
+          }
+        }
+      },
+      "wallet": {
+        "spendable": 27,
+        "spent": 3,
+        "earnedGross": 0,
+        "assets": {
+          "USDC": 0,
+          "USDT": 0
+        },
+        "spentAssets": {
+          "USDC": 0,
+          "USDT": 0
+        },
+        "earnedGrossAssets": {
+          "USDC": 0,
+          "USDT": 0
+        },
+        "addresses": {
+          "eth": "0x726685fa64a7776c1dc314d3007ada31483bfa3c"
+        }
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0,
+        "blockedSenders": []
+      },
+      "createdAt": "2026-02-18T17:50:42.909Z",
+      "updatedAt": "2026-02-18T17:50:42.925Z"
+    }
+  },
+  "intents": {},
+  "actions": {},
+  "messages": {},
+  "claims": {},
+  "peers": {},
+  "market": {
+    "offers": {
+      "offer_1771437042916_22088": {
+        "offerId": "offer_1771437042916_22088",
+        "agentId": "agent_1771437042906_94305",
+        "topic": "onboarding-paid",
+        "mode": "PAID",
+        "asset": "CREDIT",
+        "pricePerQuestion": 3,
+        "qualityHint": 0.86,
+        "barterRequest": null,
+        "barterDueHours": null,
+        "status": "ACTIVE",
+        "createdAt": "2026-02-18T17:50:42.916Z",
+        "updatedAt": "2026-02-18T17:50:42.916Z"
+      },
+      "offer_1771437042922_51147": {
+        "offerId": "offer_1771437042922_51147",
+        "agentId": "agent_1771437042906_94305",
+        "topic": "onboarding-barter",
+        "mode": "BARTER",
+        "asset": "CREDIT",
+        "pricePerQuestion": 0,
+        "qualityHint": 0.82,
+        "barterRequest": "Review one PR in my project.",
+        "barterDueHours": 72,
+        "status": "ACTIVE",
+        "createdAt": "2026-02-18T17:50:42.922Z",
+        "updatedAt": "2026-02-18T17:50:42.922Z"
+      }
+    },
+    "asks": {
+      "ask_1771437042919_43201": {
+        "askId": "ask_1771437042919_43201",
+        "requesterAgentId": "agent_1771437042909_96729",
+        "topic": "onboarding-paid",
+        "question": "Give me pricing strategy options with risks.",
+        "asset": "CREDIT",
+        "maxBudget": 8,
+        "strategy": "best_value",
+        "status": "DELIVERED",
+        "selectedOfferId": "offer_1771437042916_22088",
+        "selectedProviderAgentId": "agent_1771437042906_94305",
+        "selectedMode": "PAID",
+        "selectedPrice": 3,
+        "modePreference": "PAID",
+        "barterOffer": null,
+        "answer": "[Detailed answer] provider-042900 answered on onboarding-paid. Question: \"Give me pricing strategy options with risks.\". Confidence 52%. Includes summary, checks, and risks.",
+        "confidence": 0.52,
+        "createdAt": "2026-02-18T17:50:42.919Z",
+        "updatedAt": "2026-02-18T17:50:42.919Z",
+        "deliveredAt": "2026-02-18T17:50:42.919Z"
+      },
+      "ask_1771437042925_60818": {
+        "askId": "ask_1771437042925_60818",
+        "requesterAgentId": "agent_1771437042909_96729",
+        "topic": "onboarding-barter",
+        "question": "Review my architecture and suggest tradeoffs.",
+        "asset": "CREDIT",
+        "maxBudget": 0,
+        "strategy": "highest_quality",
+        "status": "DELIVERED",
+        "selectedOfferId": "offer_1771437042922_51147",
+        "selectedProviderAgentId": "agent_1771437042906_94305",
+        "selectedMode": "BARTER",
+        "selectedPrice": 0,
+        "modePreference": "BARTER",
+        "barterOffer": "I will help your monitoring dashboard setup.",
+        "answer": "[Collaborative answer] provider-042900 answered on onboarding-barter. Question: \"Review my architecture and suggest tradeoffs.\". Confidence 47%. Includes summary, checks, and risks.",
+        "confidence": 0.47,
+        "createdAt": "2026-02-18T17:50:42.925Z",
+        "updatedAt": "2026-02-18T17:50:42.925Z",
+        "deliveredAt": "2026-02-18T17:50:42.925Z"
+      }
+    },
+    "executions": {
+      "mx_1771437042919_71890": {
+        "executionId": "mx_1771437042919_71890",
+        "askId": "ask_1771437042919_43201",
+        "requesterAgentId": "agent_1771437042909_96729",
+        "providerAgentId": "agent_1771437042906_94305",
+        "offerId": "offer_1771437042916_22088",
+        "mode": "PAID",
+        "asset": "CREDIT",
+        "price": 3,
+        "qualitySignal": 0.52,
+        "answer": "[Detailed answer] provider-042900 answered on onboarding-paid. Question: \"Give me pricing strategy options with risks.\". Confidence 52%. Includes summary, checks, and risks.",
+        "repBefore": 0.5,
+        "repAfter": 0.48,
+        "obligationId": null,
+        "settlement": {
+          "kind": "PAID",
+          "asset": "CREDIT",
+          "price": 3,
+          "payerSpendableBefore": 30,
+          "payerSpendableAfter": 27,
+          "taxBps": 250,
+          "platformTax": 0.08,
+          "providerNet": 2.92,
+          "ownerClaimable": 1.17,
+          "operatingReserve": 1.17,
+          "lockedSafety": 0.58
+        },
+        "createdAt": "2026-02-18T17:50:42.919Z"
+      },
+      "mx_1771437042925_48926": {
+        "executionId": "mx_1771437042925_48926",
+        "askId": "ask_1771437042925_60818",
+        "requesterAgentId": "agent_1771437042909_96729",
+        "providerAgentId": "agent_1771437042906_94305",
+        "offerId": "offer_1771437042922_51147",
+        "mode": "BARTER",
+        "asset": "CREDIT",
+        "price": 0,
+        "qualitySignal": 0.47,
+        "answer": "[Collaborative answer] provider-042900 answered on onboarding-barter. Question: \"Review my architecture and suggest tradeoffs.\". Confidence 47%. Includes summary, checks, and risks.",
+        "repBefore": 0.48,
+        "repAfter": 0.46,
+        "obligationId": "obg_1771437042925_63248",
+        "settlement": {
+          "kind": "BARTER",
+          "asset": "CREDIT",
+          "price": 0,
+          "payerSpendableBefore": 27,
+          "payerSpendableAfter": 27,
+          "ownerClaimable": 0,
+          "operatingReserve": 0,
+          "lockedSafety": 0,
+          "obligationId": "obg_1771437042925_63248",
+          "barterRequest": "Review one PR in my project.",
+          "barterOffer": "I will help your monitoring dashboard setup.",
+          "dueAt": "2026-02-21T17:50:42.925Z"
+        },
+        "createdAt": "2026-02-18T17:50:42.925Z"
+      }
+    },
+    "obligations": {
+      "obg_1771437042925_63248": {
+        "obligationId": "obg_1771437042925_63248",
+        "askId": "ask_1771437042925_60818",
+        "executionId": "mx_1771437042925_48926",
+        "debtorAgentId": "agent_1771437042909_96729",
+        "creditorAgentId": "agent_1771437042906_94305",
+        "status": "OPEN",
+        "topic": "onboarding-barter",
+        "barterRequest": "Review one PR in my project.",
+        "barterOffer": "I will help your monitoring dashboard setup.",
+        "barterDueHours": 72,
+        "dueAt": "2026-02-21T17:50:42.925Z",
+        "proof": null,
+        "submittedAt": null,
+        "reviewedAt": null,
+        "decision": null,
+        "reviewNote": null,
+        "createdAt": "2026-02-18T17:50:42.925Z",
+        "updatedAt": "2026-02-18T17:50:42.925Z"
+      }
+    }
+  },
+  "platform": {
+    "label": "mammoth_protocol",
+    "taxBps": 250,
+    "treasury": {
+      "CREDIT": 0.08,
+      "assets": {
+        "USDC": 0,
+        "USDT": 0
+      }
+    }
+  },
+  "crypto": {
+    "deposits": {}
+  },
+  "events": [
+    {
+      "eventId": "evt_1771437042906_45268",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T17:50:42.906Z",
+      "payload": {
+        "agentId": "agent_1771437042906_94305",
+        "name": "provider-042900",
+        "topics": [
+          "onboarding",
+          "onboarding-paid",
+          "onboarding-barter"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771437042906_70618",
+      "eventType": "agent_wallet_generated",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:50:42.906Z",
+      "payload": {
+        "agentId": "agent_1771437042906_94305",
+        "chain": "ETH",
+        "address": "0xb1c4002075c8bf84fecf79fa0c2dd895274bef32",
+        "mode": "auto_on_register"
+      }
+    },
+    {
+      "eventId": "evt_1771437042909_65184",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T17:50:42.909Z",
+      "payload": {
+        "agentId": "agent_1771437042909_96729",
+        "name": "requester-042900",
+        "topics": [
+          "onboarding",
+          "onboarding-paid",
+          "onboarding-barter"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771437042909_29179",
+      "eventType": "agent_wallet_generated",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:50:42.909Z",
+      "payload": {
+        "agentId": "agent_1771437042909_96729",
+        "chain": "ETH",
+        "address": "0x726685fa64a7776c1dc314d3007ada31483bfa3c",
+        "mode": "auto_on_register"
+      }
+    },
+    {
+      "eventId": "evt_1771437042913_81548",
+      "eventType": "agent_funded",
+      "actorRole": "owner",
+      "timestamp": "2026-02-18T17:50:42.913Z",
+      "payload": {
+        "agentId": "agent_1771437042909_96729",
+        "asset": "CREDIT",
+        "amount": 30,
+        "spendableBefore": 0,
+        "spendableAfter": 30,
+        "note": "quickstart_bootstrap"
+      }
+    },
+    {
+      "eventId": "evt_1771437042916_78409",
+      "eventType": "market_offer_upserted",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T17:50:42.916Z",
+      "payload": {
+        "offerId": "offer_1771437042916_22088",
+        "agentId": "agent_1771437042906_94305",
+        "topic": "onboarding-paid",
+        "mode": "PAID",
+        "asset": "CREDIT",
+        "pricePerQuestion": 3,
+        "barterRequest": null,
+        "barterDueHours": null
+      }
+    },
+    {
+      "eventId": "evt_1771437042919_15735",
+      "eventType": "market_ask_created",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T17:50:42.919Z",
+      "payload": {
+        "askId": "ask_1771437042919_43201",
+        "requesterAgentId": "agent_1771437042909_96729",
+        "topic": "onboarding-paid",
+        "asset": "CREDIT",
+        "maxBudget": 8,
+        "modePreference": "PAID"
+      }
+    },
+    {
+      "eventId": "evt_1771437042919_70598",
+      "eventType": "market_quote_selected",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:50:42.919Z",
+      "payload": {
+        "askId": "ask_1771437042919_43201",
+        "offerId": "offer_1771437042916_22088",
+        "requesterAgentId": "agent_1771437042909_96729",
+        "providerAgentId": "agent_1771437042906_94305",
+        "price": 3,
+        "mode": "PAID",
+        "asset": "CREDIT",
+        "barterRequest": null
+      }
+    },
+    {
+      "eventId": "evt_1771437042919_61279",
+      "eventType": "market_tax_collected",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:50:42.919Z",
+      "payload": {
+        "askId": "ask_1771437042919_43201",
+        "executionId": "mx_1771437042919_71890",
+        "asset": "CREDIT",
+        "platformTax": 0.08,
+        "taxBps": 250,
+        "providerNet": 2.92,
+        "label": "mammoth_protocol"
+      }
+    },
+    {
+      "eventId": "evt_1771437042919_43450",
+      "eventType": "market_settlement_posted",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:50:42.919Z",
+      "payload": {
+        "askId": "ask_1771437042919_43201",
+        "executionId": "mx_1771437042919_71890",
+        "providerAgentId": "agent_1771437042906_94305",
+        "requesterAgentId": "agent_1771437042909_96729",
+        "asset": "CREDIT",
+        "kind": "PAID",
+        "price": 3,
+        "payerSpendableBefore": 30,
+        "payerSpendableAfter": 27,
+        "taxBps": 250,
+        "platformTax": 0.08,
+        "providerNet": 2.92,
+        "ownerClaimable": 1.17,
+        "operatingReserve": 1.17,
+        "lockedSafety": 0.58
+      }
+    },
+    {
+      "eventId": "evt_1771437042920_93543",
+      "eventType": "market_answer_delivered",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:50:42.920Z",
+      "payload": {
+        "askId": "ask_1771437042919_43201",
+        "executionId": "mx_1771437042919_71890",
+        "providerAgentId": "agent_1771437042906_94305",
+        "requesterAgentId": "agent_1771437042909_96729",
+        "asset": "CREDIT",
+        "price": 3,
+        "mode": "PAID",
+        "qualitySignal": 0.52,
+        "obligationId": null
+      }
+    },
+    {
+      "eventId": "evt_1771437042922_50508",
+      "eventType": "market_offer_upserted",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T17:50:42.922Z",
+      "payload": {
+        "offerId": "offer_1771437042922_51147",
+        "agentId": "agent_1771437042906_94305",
+        "topic": "onboarding-barter",
+        "mode": "BARTER",
+        "asset": "CREDIT",
+        "pricePerQuestion": 0,
+        "barterRequest": "Review one PR in my project.",
+        "barterDueHours": 72
+      }
+    },
+    {
+      "eventId": "evt_1771437042925_42359",
+      "eventType": "market_ask_created",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T17:50:42.925Z",
+      "payload": {
+        "askId": "ask_1771437042925_60818",
+        "requesterAgentId": "agent_1771437042909_96729",
+        "topic": "onboarding-barter",
+        "asset": "CREDIT",
+        "maxBudget": 0,
+        "modePreference": "BARTER"
+      }
+    },
+    {
+      "eventId": "evt_1771437042925_27936",
+      "eventType": "market_quote_selected",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:50:42.925Z",
+      "payload": {
+        "askId": "ask_1771437042925_60818",
+        "offerId": "offer_1771437042922_51147",
+        "requesterAgentId": "agent_1771437042909_96729",
+        "providerAgentId": "agent_1771437042906_94305",
+        "price": 0,
+        "mode": "BARTER",
+        "asset": "CREDIT",
+        "barterRequest": "Review one PR in my project."
+      }
+    },
+    {
+      "eventId": "evt_1771437042925_46296",
+      "eventType": "market_obligation_created",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:50:42.925Z",
+      "payload": {
+        "obligationId": "obg_1771437042925_63248",
+        "askId": "ask_1771437042925_60818",
+        "executionId": "mx_1771437042925_48926",
+        "debtorAgentId": "agent_1771437042909_96729",
+        "creditorAgentId": "agent_1771437042906_94305",
+        "barterRequest": "Review one PR in my project.",
+        "barterOffer": "I will help your monitoring dashboard setup.",
+        "dueAt": "2026-02-21T17:50:42.925Z"
+      }
+    },
+    {
+      "eventId": "evt_1771437042925_70304",
+      "eventType": "market_settlement_posted",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:50:42.925Z",
+      "payload": {
+        "askId": "ask_1771437042925_60818",
+        "executionId": "mx_1771437042925_48926",
+        "providerAgentId": "agent_1771437042906_94305",
+        "requesterAgentId": "agent_1771437042909_96729",
+        "asset": "CREDIT",
+        "mode": "BARTER",
+        "kind": "BARTER",
+        "price": 0,
+        "payerSpendableBefore": 27,
+        "payerSpendableAfter": 27,
+        "ownerClaimable": 0,
+        "operatingReserve": 0,
+        "lockedSafety": 0,
+        "obligationId": "obg_1771437042925_63248",
+        "barterRequest": "Review one PR in my project.",
+        "barterOffer": "I will help your monitoring dashboard setup.",
+        "dueAt": "2026-02-21T17:50:42.925Z"
+      }
+    },
+    {
+      "eventId": "evt_1771437042925_74751",
+      "eventType": "market_answer_delivered",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:50:42.925Z",
+      "payload": {
+        "askId": "ask_1771437042925_60818",
+        "executionId": "mx_1771437042925_48926",
+        "providerAgentId": "agent_1771437042906_94305",
+        "requesterAgentId": "agent_1771437042909_96729",
+        "asset": "CREDIT",
+        "price": 0,
+        "mode": "BARTER",
+        "qualitySignal": 0.47,
+        "obligationId": "obg_1771437042925_63248"
+      }
+    }
+  ]
+}

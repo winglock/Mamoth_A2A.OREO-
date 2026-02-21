@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "version": "0.2.0",
+    "createdAt": "2026-02-18T16:51:25.121Z",
+    "nodeId": "node_1771433485126_23754"
+  },
+  "config": {
+    "claimCooldownSec": 86400,
+    "maxRunBaseFee": 100000,
+    "peerSyncIntervalSec": 20,
+    "peerSyncTimeoutMs": 7000
+  },
+  "agents": {},
+  "intents": {},
+  "actions": {},
+  "messages": {},
+  "claims": {},
+  "peers": {
+    "self": {
+      "peerId": "self",
+      "url": "http://127.0.0.1:7367",
+      "status": "ONLINE",
+      "addedAt": "2026-02-18T16:51:25.854Z",
+      "lastSeenAt": "2026-02-18T16:51:26.002Z",
+      "lastSyncAt": "2026-02-18T16:51:26.002Z",
+      "lastSyncStatus": "OK",
+      "lastSyncError": null,
+      "autoSync": true,
+      "authToken": "dev-token-7367"
+    }
+  },
+  "market": {
+    "offers": {},
+    "asks": {},
+    "executions": {}
+  },
+  "platform": {
+    "label": "mammoth_protocol",
+    "taxBps": 250,
+    "treasury": {
+      "CREDIT": 0,
+      "assets": {
+        "USDC": 0,
+        "USDT": 0
+      }
+    }
+  },
+  "crypto": {
+    "deposits": {}
+  },
+  "events": [
+    {
+      "eventId": "evt_1771433485854_63286",
+      "eventType": "peer_added",
+      "actorRole": "owner",
+      "timestamp": "2026-02-18T16:51:25.854Z",
+      "payload": {
+        "peerId": "self",
+        "url": "http://127.0.0.1:7367"
+      }
+    },
+    {
+      "eventId": "evt_1771433486002_2356",
+      "eventType": "peer_sync_ok",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T16:51:26.002Z",
+      "payload": {
+        "peerId": "self",
+        "url": "http://127.0.0.1:7367",
+        "remoteNodeId": "node_1771433485126_23754",
+        "totalChanges": 0,
+        "source": "manual"
+      }
+    }
+  ]
+}

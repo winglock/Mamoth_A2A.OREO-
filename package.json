@@ -1,0 +1,31 @@
+{
+  "name": "mammoth",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A2P playground with local node daemon, autonomous agent economy, and read-only observer",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "daemon": "node services/node-daemon/server.mjs",
+    "mcp": "node services/node-daemon/mammoth-mcp.mjs",
+    "observer": "node apps/observer-web/server.mjs",
+    "cli": "node apps/cli/mammoth.mjs",
+    "tui": "node apps/cli/mammoth-tui.mjs",
+    "tui2": "node apps/cli/mammoth-tui-v2.mjs",
+    "health": "node apps/cli/mammoth.mjs health",
+    "quickstart": "node apps/cli/mammoth.mjs quickstart",
+    "doctor": "node apps/cli/mammoth.mjs doctor",
+    "wizard": "node apps/cli/mammoth.mjs wizard",
+    "setup": "node apps/cli/mammoth.mjs setup",
+    "status": "node apps/cli/mammoth.mjs status",
+    "onboard:auto": "node apps/cli/mammoth.mjs onboard --auto",
+    "timeline": "node apps/cli/mammoth.mjs timeline --limit 20",
+    "summary": "node apps/cli/mammoth.mjs summary",
+    "dev:win": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-mammoth.ps1",
+    "win:start": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-mammoth.ps1",
+    "win:stop": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/stop-mammoth.ps1"
+  }
+}

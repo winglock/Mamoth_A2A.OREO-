@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mammoth.dev/schema/a2a-message.schema.json",
+  "title": "A2A Message",
+  "type": "object",
+  "required": [
+    "type",
+    "msgId",
+    "from",
+    "to",
+    "timestamp"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "contact_offer",
+        "contact_accept",
+        "contact_refuse",
+        "contact_timeout",
+        "block",
+        "mute"
+      ]
+    },
+    "msgId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "replyTo": {
+      "type": "string"
+    },
+    "from": {
+      "type": "string",
+      "minLength": 1
+    },
+    "to": {
+      "type": "string",
+      "minLength": 1
+    },
+    "intentId": {
+      "type": "string"
+    },
+    "reasonCode": {
+      "type": "string",
+      "enum": [
+        "POLICY_DENY",
+        "BLOCKED_SENDER",
+        "RATE_LIMITED",
+        "LOW_REPUTATION",
+        "UNSUPPORTED_TOPIC",
+        "INSUFFICIENT_STAKE",
+        "BUSY",
+        "MANUAL_DENY"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}
+

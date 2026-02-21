@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mammoth.dev/schema/aof.schema.json",
+  "title": "Agent Offer Format",
+  "type": "object",
+  "required": [
+    "offerId",
+    "providerAgentId",
+    "intentId",
+    "price",
+    "validUntil"
+  ],
+  "properties": {
+    "offerId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "providerAgentId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "intentId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "price": {
+      "type": "number",
+      "minimum": 0
+    },
+    "inventory": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "sla": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "refundTerms": {
+      "type": "string"
+    },
+    "fee": {
+      "type": "number",
+      "minimum": 0
+    },
+    "proofSchema": {
+      "type": "string"
+    },
+    "validUntil": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}
+

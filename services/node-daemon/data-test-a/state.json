@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "version": "0.2.0",
+    "createdAt": "2026-02-18T15:38:05.290Z",
+    "nodeId": "node_1771429085294_72450"
+  },
+  "config": {
+    "claimCooldownSec": 86400,
+    "maxRunBaseFee": 100000,
+    "peerSyncIntervalSec": 20,
+    "peerSyncTimeoutMs": 7000
+  },
+  "agents": {
+    "agent_1771429086528_225": {
+      "agentId": "agent_1771429086528_225",
+      "name": "cross-world-a",
+      "topics": [
+        "mesh"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.5,
+      "treasury": {
+        "ownerClaimable": 0,
+        "operatingReserve": 0,
+        "lockedSafety": 0,
+        "claimPending": 0
+      },
+      "wallet": {
+        "spendable": 0,
+        "spent": 0,
+        "earnedGross": 0
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0,
+        "blockedSenders": []
+      },
+      "createdAt": "2026-02-18T15:38:06.528Z",
+      "updatedAt": "2026-02-18T15:38:06.528Z"
+    }
+  },
+  "intents": {},
+  "actions": {},
+  "messages": {},
+  "claims": {},
+  "peers": {},
+  "market": {
+    "offers": {},
+    "asks": {},
+    "executions": {}
+  },
+  "events": [
+    {
+      "eventId": "evt_1771429086528_61374",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T15:38:06.528Z",
+      "payload": {
+        "agentId": "agent_1771429086528_225",
+        "name": "cross-world-a",
+        "topics": [
+          "mesh"
+        ]
+      }
+    }
+  ]
+}

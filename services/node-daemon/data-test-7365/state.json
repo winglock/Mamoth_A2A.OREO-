@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "version": "0.2.0",
+    "createdAt": "2026-02-18T16:12:31.260Z",
+    "nodeId": "node_1771431151265_78282"
+  },
+  "config": {
+    "claimCooldownSec": 86400,
+    "maxRunBaseFee": 100000,
+    "peerSyncIntervalSec": 20,
+    "peerSyncTimeoutMs": 7000
+  },
+  "agents": {},
+  "intents": {},
+  "actions": {},
+  "messages": {},
+  "claims": {},
+  "peers": {
+    "self": {
+      "peerId": "self",
+      "url": "http://127.0.0.1:7365",
+      "status": "ONLINE",
+      "addedAt": "2026-02-18T16:12:32.400Z",
+      "lastSeenAt": "2026-02-18T16:12:32.645Z",
+      "lastSyncAt": "2026-02-18T16:12:32.645Z",
+      "lastSyncStatus": "OK",
+      "lastSyncError": null,
+      "autoSync": true,
+      "authToken": "dev-token-7365"
+    }
+  },
+  "market": {
+    "offers": {},
+    "asks": {},
+    "executions": {}
+  },
+  "crypto": {
+    "deposits": {}
+  },
+  "events": [
+    {
+      "eventId": "evt_1771431152400_88669",
+      "eventType": "peer_added",
+      "actorRole": "owner",
+      "timestamp": "2026-02-18T16:12:32.400Z",
+      "payload": {
+        "peerId": "self",
+        "url": "http://127.0.0.1:7365"
+      }
+    },
+    {
+      "eventId": "evt_1771431152645_56566",
+      "eventType": "peer_sync_ok",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T16:12:32.645Z",
+      "payload": {
+        "peerId": "self",
+        "url": "http://127.0.0.1:7365",
+        "remoteNodeId": "node_1771431151265_78282",
+        "totalChanges": 0,
+        "source": "manual"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1279 @@
+{
+  "meta": {
+    "version": "0.2.0",
+    "createdAt": "2026-02-16T12:31:17.936Z",
+    "nodeId": "node_1771245077938_4027"
+  },
+  "config": {
+    "claimCooldownSec": 86400,
+    "maxRunBaseFee": 100000,
+    "peerSyncIntervalSec": 20,
+    "peerSyncTimeoutMs": 7000
+  },
+  "agents": {
+    "agent_1771218831504_69109": {
+      "agentId": "agent_1771218831504_69109",
+      "name": "agent-alpha",
+      "topics": [
+        "saas",
+        "pricing"
+      ],
+      "reputation": 0.51,
+      "treasury": {
+        "ownerClaimable": 4.6,
+        "operatingReserve": 4.6,
+        "lockedSafety": 2.3
+      },
+      "createdAt": "2026-02-16T05:13:51.504Z",
+      "updatedAt": "2026-02-16T05:13:52.526Z"
+    },
+    "agent_1771220689999_99555": {
+      "agentId": "agent_1771220689999_99555",
+      "name": "agent-alpha",
+      "topics": [
+        "saas",
+        "pricing"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.51,
+      "treasury": {
+        "ownerClaimable": 4.6,
+        "operatingReserve": 4.6,
+        "lockedSafety": 2.3,
+        "claimPending": 0
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0,
+        "blockedSenders": []
+      },
+      "createdAt": "2026-02-16T05:44:49.999Z",
+      "updatedAt": "2026-02-16T05:44:51.380Z"
+    },
+    "agent_1771220690358_77625": {
+      "agentId": "agent_1771220690358_77625",
+      "name": "agent-beta",
+      "topics": [
+        "saas"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.5,
+      "treasury": {
+        "ownerClaimable": 0,
+        "operatingReserve": 0,
+        "lockedSafety": 0,
+        "claimPending": 0
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0.4,
+        "blockedSenders": [
+          "agent_1771220689999_99555"
+        ]
+      },
+      "createdAt": "2026-02-16T05:44:50.358Z",
+      "updatedAt": "2026-02-16T05:44:53.488Z"
+    },
+    "agent_1771220839882_53065": {
+      "agentId": "agent_1771220839882_53065",
+      "name": "agent-alpha",
+      "topics": [
+        "saas",
+        "pricing"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.51,
+      "treasury": {
+        "ownerClaimable": 3.6,
+        "operatingReserve": 4.6,
+        "lockedSafety": 2.3,
+        "claimPending": 0
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0,
+        "blockedSenders": []
+      },
+      "createdAt": "2026-02-16T05:47:19.882Z",
+      "updatedAt": "2026-02-16T05:47:23.513Z"
+    },
+    "agent_1771220840179_81873": {
+      "agentId": "agent_1771220840179_81873",
+      "name": "agent-beta",
+      "topics": [
+        "saas"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.5,
+      "treasury": {
+        "ownerClaimable": 0,
+        "operatingReserve": 0,
+        "lockedSafety": 0,
+        "claimPending": 0
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0.4,
+        "blockedSenders": [
+          "agent_1771220839882_53065"
+        ]
+      },
+      "createdAt": "2026-02-16T05:47:20.179Z",
+      "updatedAt": "2026-02-16T05:47:22.618Z"
+    },
+    "agent_1771243578167_98073": {
+      "agentId": "agent_1771243578167_98073",
+      "name": "agent-requester",
+      "topics": [
+        "saas",
+        "pricing"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.5,
+      "treasury": {
+        "ownerClaimable": 0,
+        "operatingReserve": 0,
+        "lockedSafety": 0,
+        "claimPending": 0
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0,
+        "blockedSenders": []
+      },
+      "createdAt": "2026-02-16T12:06:18.167Z",
+      "updatedAt": "2026-02-16T12:06:18.167Z"
+    },
+    "agent_1771243587157_34242": {
+      "agentId": "agent_1771243587157_34242",
+      "name": "agent-expert",
+      "topics": [
+        "saas"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.5,
+      "treasury": {
+        "ownerClaimable": 0,
+        "operatingReserve": 0,
+        "lockedSafety": 0,
+        "claimPending": 0
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0,
+        "blockedSenders": []
+      },
+      "createdAt": "2026-02-16T12:06:27.157Z",
+      "updatedAt": "2026-02-16T12:06:27.157Z"
+    },
+    "agent_1771243634833_71222": {
+      "agentId": "agent_1771243634833_71222",
+      "name": "agent-requester-2",
+      "topics": [
+        "saas",
+        "pricing"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.5,
+      "treasury": {
+        "ownerClaimable": 0,
+        "operatingReserve": 0,
+        "lockedSafety": 0,
+        "claimPending": 0
+      },
+      "wallet": {
+        "spendable": 18,
+        "spent": 2,
+        "earnedGross": 0
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0,
+        "blockedSenders": []
+      },
+      "createdAt": "2026-02-16T12:07:14.833Z",
+      "updatedAt": "2026-02-16T12:07:59.378Z"
+    },
+    "agent_1771243642939_71644": {
+      "agentId": "agent_1771243642939_71644",
+      "name": "agent-expert-2",
+      "topics": [
+        "saas"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.49,
+      "treasury": {
+        "ownerClaimable": 0.8,
+        "operatingReserve": 0.8,
+        "lockedSafety": 0.4,
+        "claimPending": 0
+      },
+      "wallet": {
+        "spendable": 0,
+        "spent": 0,
+        "earnedGross": 2
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0,
+        "blockedSenders": []
+      },
+      "createdAt": "2026-02-16T12:07:22.939Z",
+      "updatedAt": "2026-02-16T12:07:59.378Z"
+    },
+    "agent_1771245105833_16655": {
+      "agentId": "agent_1771245105833_16655",
+      "name": "geo-sync-agent",
+      "topics": [
+        "global",
+        "mesh"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.5,
+      "treasury": {
+        "ownerClaimable": 0,
+        "operatingReserve": 0,
+        "lockedSafety": 0,
+        "claimPending": 0
+      },
+      "wallet": {
+        "spendable": 0,
+        "spent": 0,
+        "earnedGross": 0
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0,
+        "blockedSenders": []
+      },
+      "createdAt": "2026-02-16T12:31:45.833Z",
+      "updatedAt": "2026-02-16T12:31:45.833Z"
+    },
+    "agent_1771245131753_65174": {
+      "agentId": "agent_1771245131753_65174",
+      "name": "geo-node2-agent",
+      "topics": [
+        "remote"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.5,
+      "treasury": {
+        "ownerClaimable": 0,
+        "operatingReserve": 0,
+        "lockedSafety": 0,
+        "claimPending": 0
+      },
+      "wallet": {
+        "spendable": 0,
+        "spent": 0,
+        "earnedGross": 0
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0,
+        "blockedSenders": []
+      },
+      "createdAt": "2026-02-16T12:32:11.753Z",
+      "updatedAt": "2026-02-16T12:32:11.753Z"
+    }
+  },
+  "intents": {
+    "intent_1771218832098_92990": {
+      "intentId": "intent_1771218832098_92990",
+      "agentId": "agent_1771218831504_69109",
+      "goal": "buy_saas_subscription",
+      "budget": 100,
+      "constraints": {},
+      "status": "EXECUTED",
+      "createdAt": "2026-02-16T05:13:52.099Z",
+      "updatedAt": "2026-02-16T05:13:52.526Z"
+    },
+    "intent_1771220690983_29667": {
+      "intentId": "intent_1771220690983_29667",
+      "agentId": "agent_1771220689999_99555",
+      "goal": "buy_saas_subscription",
+      "budget": 12,
+      "constraints": {},
+      "status": "EXECUTED",
+      "createdAt": "2026-02-16T05:44:50.983Z",
+      "updatedAt": "2026-02-16T05:44:51.380Z"
+    },
+    "intent_1771220840745_40008": {
+      "intentId": "intent_1771220840745_40008",
+      "agentId": "agent_1771220839882_53065",
+      "goal": "buy_saas_subscription",
+      "budget": 12,
+      "constraints": {},
+      "status": "EXECUTED",
+      "createdAt": "2026-02-16T05:47:20.745Z",
+      "updatedAt": "2026-02-16T05:47:20.995Z"
+    }
+  },
+  "actions": {
+    "action_1771218832526_85605": {
+      "actionId": "action_1771218832526_85605",
+      "intentId": "intent_1771218832098_92990",
+      "agentId": "agent_1771218831504_69109",
+      "status": "EXECUTED",
+      "createdAt": "2026-02-16T05:13:52.526Z",
+      "settlement": {
+        "baseFee": 10,
+        "multiplier": 1.15,
+        "payout": 11.5,
+        "ownerClaimable": 4.6,
+        "operatingReserve": 4.6,
+        "lockedSafety": 2.3
+      },
+      "poa": {
+        "receiptRef": "receipt_1771218832526_46322",
+        "status": "SIGNED",
+        "timestamp": "2026-02-16T05:13:52.526Z"
+      }
+    },
+    "action_1771220691380_42807": {
+      "actionId": "action_1771220691380_42807",
+      "intentId": "intent_1771220690983_29667",
+      "agentId": "agent_1771220689999_99555",
+      "status": "EXECUTED",
+      "createdAt": "2026-02-16T05:44:51.380Z",
+      "settlement": {
+        "baseFee": 10,
+        "multiplier": 1.15,
+        "payout": 11.5,
+        "ownerClaimable": 4.6,
+        "operatingReserve": 4.6,
+        "lockedSafety": 2.3
+      },
+      "poa": {
+        "receiptRef": "receipt_1771220691380_51136",
+        "status": "SIGNED",
+        "timestamp": "2026-02-16T05:44:51.380Z"
+      },
+      "qualitySignal": 0.95
+    },
+    "action_1771220840995_57012": {
+      "actionId": "action_1771220840995_57012",
+      "intentId": "intent_1771220840745_40008",
+      "agentId": "agent_1771220839882_53065",
+      "status": "EXECUTED",
+      "createdAt": "2026-02-16T05:47:20.995Z",
+      "settlement": {
+        "baseFee": 10,
+        "multiplier": 1.15,
+        "payout": 11.5,
+        "ownerClaimable": 4.6,
+        "operatingReserve": 4.6,
+        "lockedSafety": 2.3
+      },
+      "poa": {
+        "receiptRef": "receipt_1771220840995_44567",
+        "status": "SIGNED",
+        "timestamp": "2026-02-16T05:47:20.995Z"
+      },
+      "qualitySignal": 0.95
+    }
+  },
+  "messages": {
+    "msg_1771220692168_99954": {
+      "msgId": "msg_1771220692168_99954",
+      "type": "contact_offer",
+      "fromAgentId": "agent_1771220689999_99555",
+      "toAgentId": "agent_1771220690358_77625",
+      "topic": "saas",
+      "payload": {},
+      "status": "REFUSED",
+      "reasonCode": "LOW_REPUTATION",
+      "createdAt": "2026-02-16T05:44:52.168Z",
+      "updatedAt": "2026-02-16T05:44:52.168Z",
+      "via": "local"
+    },
+    "msg_1771220692768_23969": {
+      "msgId": "msg_1771220692768_23969",
+      "type": "contact_offer",
+      "fromAgentId": "agent_1771220689999_99555",
+      "toAgentId": "agent_1771220690358_77625",
+      "topic": "saas",
+      "payload": {},
+      "status": "ACCEPTED",
+      "reasonCode": null,
+      "createdAt": "2026-02-16T05:44:52.768Z",
+      "updatedAt": "2026-02-16T05:44:53.118Z",
+      "via": "local",
+      "permission": "negotiate"
+    },
+    "msg_1771220841446_50682": {
+      "msgId": "msg_1771220841446_50682",
+      "type": "contact_offer",
+      "fromAgentId": "agent_1771220839882_53065",
+      "toAgentId": "agent_1771220840179_81873",
+      "topic": "saas",
+      "payload": {},
+      "status": "REFUSED",
+      "reasonCode": "LOW_REPUTATION",
+      "createdAt": "2026-02-16T05:47:21.446Z",
+      "updatedAt": "2026-02-16T05:47:21.446Z",
+      "via": "local"
+    },
+    "msg_1771220842069_36910": {
+      "msgId": "msg_1771220842069_36910",
+      "type": "contact_offer",
+      "fromAgentId": "agent_1771220839882_53065",
+      "toAgentId": "agent_1771220840179_81873",
+      "topic": "saas",
+      "payload": {},
+      "status": "ACCEPTED",
+      "reasonCode": null,
+      "createdAt": "2026-02-16T05:47:22.069Z",
+      "updatedAt": "2026-02-16T05:47:22.377Z",
+      "via": "local",
+      "permission": "negotiate"
+    },
+    "msg_1771220842876_10202": {
+      "msgId": "msg_1771220842876_10202",
+      "type": "contact_offer",
+      "fromAgentId": "agent_1771220839882_53065",
+      "toAgentId": "agent_1771220840179_81873",
+      "topic": "saas",
+      "payload": {},
+      "status": "REFUSED",
+      "reasonCode": "BLOCKED_SENDER",
+      "createdAt": "2026-02-16T05:47:22.876Z",
+      "updatedAt": "2026-02-16T05:47:22.876Z",
+      "via": "local"
+    }
+  },
+  "claims": {
+    "claim_1771220843296_15652": {
+      "claimId": "claim_1771220843296_15652",
+      "agentId": "agent_1771220839882_53065",
+      "amount": 1,
+      "status": "EXECUTED",
+      "requestedAt": "2026-02-16T05:47:23.296Z",
+      "executeAfter": "2026-02-16T05:47:23.296Z",
+      "executedAt": "2026-02-16T05:47:23.513Z"
+    }
+  },
+  "peers": {
+    "earth-west": {
+      "peerId": "earth-west",
+      "url": "http://127.0.0.1:7340",
+      "status": "ONLINE",
+      "addedAt": "2026-02-16T12:31:58.020Z",
+      "lastSeenAt": "2026-02-16T12:32:37.983Z",
+      "lastSyncAt": "2026-02-16T12:32:37.983Z",
+      "lastSyncStatus": "OK",
+      "lastSyncError": null,
+      "autoSync": true,
+      "authToken": "local-dev-token"
+    },
+    "self": {
+      "peerId": "self",
+      "url": "http://127.0.0.1:7340",
+      "status": "OFFLINE",
+      "addedAt": "2026-02-16T05:47:23.720Z",
+      "lastSeenAt": "2026-02-16T12:32:20.338Z",
+      "lastSyncAt": "2026-02-16T12:32:37.990Z",
+      "lastSyncStatus": "FAILED",
+      "lastSyncError": "snapshot failed (401): {\"error\":\"Unauthorized: invalid x-mammoth-token\"}",
+      "autoSync": true,
+      "authToken": ""
+    },
+    "self-loop": {
+      "peerId": "self-loop",
+      "url": "http://127.0.0.1:7340",
+      "status": "OFFLINE",
+      "addedAt": "2026-02-16T12:29:36.151Z",
+      "lastSeenAt": "2026-02-16T12:32:20.345Z",
+      "lastSyncAt": "2026-02-16T12:32:37.994Z",
+      "lastSyncStatus": "FAILED",
+      "lastSyncError": "snapshot failed (401): {\"error\":\"Unauthorized: invalid x-mammoth-token\"}",
+      "autoSync": true,
+      "authToken": ""
+    },
+    "earth-east": {
+      "peerId": "earth-east",
+      "url": "http://127.0.0.1:7355",
+      "status": "ONLINE",
+      "addedAt": "2026-02-16T12:32:12.239Z",
+      "lastSeenAt": "2026-02-16T12:32:38.003Z",
+      "lastSyncAt": "2026-02-16T12:32:38.003Z",
+      "lastSyncStatus": "OK",
+      "lastSyncError": null,
+      "autoSync": true,
+      "authToken": ""
+    }
+  },
+  "market": {
+    "offers": {
+      "offer_1771243668726_35836": {
+        "offerId": "offer_1771243668726_35836",
+        "agentId": "agent_1771243642939_71644",
+        "topic": "saas",
+        "mode": "PAID",
+        "pricePerQuestion": 2,
+        "qualityHint": 0.95,
+        "status": "ACTIVE",
+        "createdAt": "2026-02-16T12:07:48.726Z",
+        "updatedAt": "2026-02-16T12:07:48.726Z"
+      }
+    },
+    "asks": {
+      "ask_1771243679377_10019": {
+        "askId": "ask_1771243679377_10019",
+        "requesterAgentId": "agent_1771243634833_71222",
+        "topic": "saas",
+        "question": "best annual SaaS billing strategy?",
+        "maxBudget": 5,
+        "strategy": "best_value",
+        "status": "DELIVERED",
+        "selectedOfferId": "offer_1771243668726_35836",
+        "selectedProviderAgentId": "agent_1771243642939_71644",
+        "selectedPrice": 2,
+        "answer": "[정밀 답변] agent-expert-2가 saas 주제로 응답했습니다. 질문 핵심: \"best annual SaaS billing strategy?\". 신뢰도 54% 기준으로 실행 가능한 단계(요약 -> 검증 포인트 -> 리스크)를 제공합니다.",
+        "confidence": 0.54,
+        "createdAt": "2026-02-16T12:07:59.377Z",
+        "updatedAt": "2026-02-16T12:07:59.378Z",
+        "deliveredAt": "2026-02-16T12:07:59.378Z"
+      }
+    },
+    "executions": {
+      "mx_1771243679378_83689": {
+        "executionId": "mx_1771243679378_83689",
+        "askId": "ask_1771243679377_10019",
+        "requesterAgentId": "agent_1771243634833_71222",
+        "providerAgentId": "agent_1771243642939_71644",
+        "offerId": "offer_1771243668726_35836",
+        "mode": "PAID",
+        "price": 2,
+        "qualitySignal": 0.54,
+        "answer": "[정밀 답변] agent-expert-2가 saas 주제로 응답했습니다. 질문 핵심: \"best annual SaaS billing strategy?\". 신뢰도 54% 기준으로 실행 가능한 단계(요약 -> 검증 포인트 -> 리스크)를 제공합니다.",
+        "repBefore": 0.5,
+        "repAfter": 0.49,
+        "settlement": {
+          "price": 2,
+          "payerSpendableBefore": 20,
+          "payerSpendableAfter": 18,
+          "ownerClaimable": 0.8,
+          "operatingReserve": 0.8,
+          "lockedSafety": 0.4
+        },
+        "createdAt": "2026-02-16T12:07:59.378Z"
+      }
+    }
+  },
+  "events": [
+    {
+      "eventId": "evt_1771218831504_32951",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:13:51.504Z",
+      "payload": {
+        "agentId": "agent_1771218831504_69109",
+        "name": "agent-alpha",
+        "topics": [
+          "saas",
+          "pricing"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771218832099_64349",
+      "eventType": "intent_created",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:13:52.099Z",
+      "payload": {
+        "intentId": "intent_1771218832098_92990",
+        "agentId": "agent_1771218831504_69109",
+        "goal": "buy_saas_subscription",
+        "budget": 100
+      }
+    },
+    {
+      "eventId": "evt_1771218832526_35834",
+      "eventType": "action_executed",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:13:52.526Z",
+      "payload": {
+        "actionId": "action_1771218832526_85605",
+        "intentId": "intent_1771218832098_92990",
+        "agentId": "agent_1771218831504_69109",
+        "payout": 11.5
+      }
+    },
+    {
+      "eventId": "evt_1771218832526_12818",
+      "eventType": "poa_recorded",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T05:13:52.526Z",
+      "payload": {
+        "actionId": "action_1771218832526_85605",
+        "receiptRef": "receipt_1771218832526_46322"
+      }
+    },
+    {
+      "eventId": "evt_1771218832526_64600",
+      "eventType": "settlement_posted",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T05:13:52.527Z",
+      "payload": {
+        "actionId": "action_1771218832526_85605",
+        "ownerClaimable": 4.6,
+        "operatingReserve": 4.6,
+        "lockedSafety": 2.3,
+        "repBefore": 0.5,
+        "repAfter": 0.51
+      }
+    },
+    {
+      "eventId": "evt_1771220689999_11374",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:44:49.999Z",
+      "payload": {
+        "agentId": "agent_1771220689999_99555",
+        "name": "agent-alpha",
+        "topics": [
+          "saas",
+          "pricing"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771220690358_79552",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:44:50.358Z",
+      "payload": {
+        "agentId": "agent_1771220690358_77625",
+        "name": "agent-beta",
+        "topics": [
+          "saas"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771220690983_93052",
+      "eventType": "intent_created",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:44:50.983Z",
+      "payload": {
+        "intentId": "intent_1771220690983_29667",
+        "agentId": "agent_1771220689999_99555",
+        "goal": "buy_saas_subscription",
+        "budget": 12
+      }
+    },
+    {
+      "eventId": "evt_1771220691380_52717",
+      "eventType": "action_executed",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:44:51.380Z",
+      "payload": {
+        "actionId": "action_1771220691380_42807",
+        "intentId": "intent_1771220690983_29667",
+        "agentId": "agent_1771220689999_99555",
+        "payout": 11.5
+      }
+    },
+    {
+      "eventId": "evt_1771220691380_12546",
+      "eventType": "poa_recorded",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T05:44:51.380Z",
+      "payload": {
+        "actionId": "action_1771220691380_42807",
+        "receiptRef": "receipt_1771220691380_51136"
+      }
+    },
+    {
+      "eventId": "evt_1771220691380_4654",
+      "eventType": "settlement_posted",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T05:44:51.380Z",
+      "payload": {
+        "actionId": "action_1771220691380_42807",
+        "ownerClaimable": 4.6,
+        "operatingReserve": 4.6,
+        "lockedSafety": 2.3,
+        "repBefore": 0.5,
+        "repAfter": 0.51
+      }
+    },
+    {
+      "eventId": "evt_1771220692168_49165",
+      "eventType": "contact_refused",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T05:44:52.168Z",
+      "payload": {
+        "msgId": "msg_1771220692168_99954",
+        "fromAgentId": "agent_1771220689999_99555",
+        "toAgentId": "agent_1771220690358_77625",
+        "reasonCode": "LOW_REPUTATION"
+      }
+    },
+    {
+      "eventId": "evt_1771220692468_8803",
+      "eventType": "agent_policy_updated",
+      "actorRole": "owner",
+      "timestamp": "2026-02-16T05:44:52.468Z",
+      "payload": {
+        "agentId": "agent_1771220690358_77625",
+        "policy": {
+          "autoRefuseMinReputation": 0.4,
+          "blockedSenders": [
+            "agent_1771220689999_99555"
+          ]
+        }
+      }
+    },
+    {
+      "eventId": "evt_1771220692768_32747",
+      "eventType": "contact_offered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:44:52.768Z",
+      "payload": {
+        "msgId": "msg_1771220692768_23969",
+        "fromAgentId": "agent_1771220689999_99555",
+        "toAgentId": "agent_1771220690358_77625",
+        "topic": "saas"
+      }
+    },
+    {
+      "eventId": "evt_1771220693118_37451",
+      "eventType": "contact_accepted",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:44:53.118Z",
+      "payload": {
+        "msgId": "msg_1771220692768_23969",
+        "fromAgentId": "agent_1771220689999_99555",
+        "toAgentId": "agent_1771220690358_77625",
+        "permission": "negotiate"
+      }
+    },
+    {
+      "eventId": "evt_1771220693488_30484",
+      "eventType": "contact_blocked",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:44:53.488Z",
+      "payload": {
+        "agentId": "agent_1771220690358_77625",
+        "senderId": "agent_1771220689999_99555"
+      }
+    },
+    {
+      "eventId": "evt_1771220839882_53674",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:47:19.882Z",
+      "payload": {
+        "agentId": "agent_1771220839882_53065",
+        "name": "agent-alpha",
+        "topics": [
+          "saas",
+          "pricing"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771220840179_6400",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:47:20.179Z",
+      "payload": {
+        "agentId": "agent_1771220840179_81873",
+        "name": "agent-beta",
+        "topics": [
+          "saas"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771220840745_24035",
+      "eventType": "intent_created",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:47:20.745Z",
+      "payload": {
+        "intentId": "intent_1771220840745_40008",
+        "agentId": "agent_1771220839882_53065",
+        "goal": "buy_saas_subscription",
+        "budget": 12
+      }
+    },
+    {
+      "eventId": "evt_1771220840995_19278",
+      "eventType": "action_executed",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:47:20.995Z",
+      "payload": {
+        "actionId": "action_1771220840995_57012",
+        "intentId": "intent_1771220840745_40008",
+        "agentId": "agent_1771220839882_53065",
+        "payout": 11.5
+      }
+    },
+    {
+      "eventId": "evt_1771220840995_40186",
+      "eventType": "poa_recorded",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T05:47:20.995Z",
+      "payload": {
+        "actionId": "action_1771220840995_57012",
+        "receiptRef": "receipt_1771220840995_44567"
+      }
+    },
+    {
+      "eventId": "evt_1771220840995_56290",
+      "eventType": "settlement_posted",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T05:47:20.995Z",
+      "payload": {
+        "actionId": "action_1771220840995_57012",
+        "ownerClaimable": 4.6,
+        "operatingReserve": 4.6,
+        "lockedSafety": 2.3,
+        "repBefore": 0.5,
+        "repAfter": 0.51
+      }
+    },
+    {
+      "eventId": "evt_1771220841446_86318",
+      "eventType": "contact_refused",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T05:47:21.446Z",
+      "payload": {
+        "msgId": "msg_1771220841446_50682",
+        "fromAgentId": "agent_1771220839882_53065",
+        "toAgentId": "agent_1771220840179_81873",
+        "reasonCode": "LOW_REPUTATION"
+      }
+    },
+    {
+      "eventId": "evt_1771220841817_39828",
+      "eventType": "agent_policy_updated",
+      "actorRole": "owner",
+      "timestamp": "2026-02-16T05:47:21.817Z",
+      "payload": {
+        "agentId": "agent_1771220840179_81873",
+        "policy": {
+          "autoRefuseMinReputation": 0.4,
+          "blockedSenders": [
+            "agent_1771220839882_53065"
+          ]
+        }
+      }
+    },
+    {
+      "eventId": "evt_1771220842069_27372",
+      "eventType": "contact_offered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:47:22.069Z",
+      "payload": {
+        "msgId": "msg_1771220842069_36910",
+        "fromAgentId": "agent_1771220839882_53065",
+        "toAgentId": "agent_1771220840179_81873",
+        "topic": "saas"
+      }
+    },
+    {
+      "eventId": "evt_1771220842377_31989",
+      "eventType": "contact_accepted",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:47:22.377Z",
+      "payload": {
+        "msgId": "msg_1771220842069_36910",
+        "fromAgentId": "agent_1771220839882_53065",
+        "toAgentId": "agent_1771220840179_81873",
+        "permission": "negotiate"
+      }
+    },
+    {
+      "eventId": "evt_1771220842618_57724",
+      "eventType": "contact_blocked",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T05:47:22.618Z",
+      "payload": {
+        "agentId": "agent_1771220840179_81873",
+        "senderId": "agent_1771220839882_53065"
+      }
+    },
+    {
+      "eventId": "evt_1771220842876_51835",
+      "eventType": "contact_refused",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T05:47:22.876Z",
+      "payload": {
+        "msgId": "msg_1771220842876_10202",
+        "fromAgentId": "agent_1771220839882_53065",
+        "toAgentId": "agent_1771220840179_81873",
+        "reasonCode": "BLOCKED_SENDER"
+      }
+    },
+    {
+      "eventId": "evt_1771220843296_92304",
+      "eventType": "claim_requested",
+      "actorRole": "owner",
+      "timestamp": "2026-02-16T05:47:23.296Z",
+      "payload": {
+        "claimId": "claim_1771220843296_15652",
+        "agentId": "agent_1771220839882_53065",
+        "amount": 1,
+        "executeAfter": "2026-02-16T05:47:23.296Z"
+      }
+    },
+    {
+      "eventId": "evt_1771220843513_4383",
+      "eventType": "claim_executed",
+      "actorRole": "owner",
+      "timestamp": "2026-02-16T05:47:23.513Z",
+      "payload": {
+        "claimId": "claim_1771220843296_15652",
+        "agentId": "agent_1771220839882_53065",
+        "amount": 1
+      }
+    },
+    {
+      "eventId": "evt_1771220843720_22511",
+      "eventType": "peer_added",
+      "actorRole": "owner",
+      "timestamp": "2026-02-16T05:47:23.720Z",
+      "payload": {
+        "peerId": "self",
+        "url": "http://127.0.0.1:7340"
+      }
+    },
+    {
+      "eventId": "evt_1771220844040_37146",
+      "eventType": "peer_ping_ok",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T05:47:24.040Z",
+      "payload": {
+        "peerId": "self",
+        "url": "http://127.0.0.1:7340"
+      }
+    },
+    {
+      "eventId": "evt_1771243578168_22241",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T12:06:18.168Z",
+      "payload": {
+        "agentId": "agent_1771243578167_98073",
+        "name": "agent-requester",
+        "topics": [
+          "saas",
+          "pricing"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771243587157_14303",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T12:06:27.157Z",
+      "payload": {
+        "agentId": "agent_1771243587157_34242",
+        "name": "agent-expert",
+        "topics": [
+          "saas"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771243634833_55230",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T12:07:14.833Z",
+      "payload": {
+        "agentId": "agent_1771243634833_71222",
+        "name": "agent-requester-2",
+        "topics": [
+          "saas",
+          "pricing"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771243642939_52355",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T12:07:22.939Z",
+      "payload": {
+        "agentId": "agent_1771243642939_71644",
+        "name": "agent-expert-2",
+        "topics": [
+          "saas"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771243660019_74160",
+      "eventType": "agent_funded",
+      "actorRole": "owner",
+      "timestamp": "2026-02-16T12:07:40.019Z",
+      "payload": {
+        "agentId": "agent_1771243634833_71222",
+        "amount": 20,
+        "spendableBefore": 0,
+        "spendableAfter": 20,
+        "note": "owner_funding"
+      }
+    },
+    {
+      "eventId": "evt_1771243668726_75073",
+      "eventType": "market_offer_upserted",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T12:07:48.726Z",
+      "payload": {
+        "offerId": "offer_1771243668726_35836",
+        "agentId": "agent_1771243642939_71644",
+        "topic": "saas",
+        "mode": "PAID",
+        "pricePerQuestion": 2
+      }
+    },
+    {
+      "eventId": "evt_1771243679377_34185",
+      "eventType": "market_ask_created",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T12:07:59.377Z",
+      "payload": {
+        "askId": "ask_1771243679377_10019",
+        "requesterAgentId": "agent_1771243634833_71222",
+        "topic": "saas",
+        "maxBudget": 5
+      }
+    },
+    {
+      "eventId": "evt_1771243679378_13639",
+      "eventType": "market_quote_selected",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T12:07:59.378Z",
+      "payload": {
+        "askId": "ask_1771243679377_10019",
+        "offerId": "offer_1771243668726_35836",
+        "requesterAgentId": "agent_1771243634833_71222",
+        "providerAgentId": "agent_1771243642939_71644",
+        "price": 2,
+        "mode": "PAID"
+      }
+    },
+    {
+      "eventId": "evt_1771243679378_51267",
+      "eventType": "market_settlement_posted",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T12:07:59.378Z",
+      "payload": {
+        "askId": "ask_1771243679377_10019",
+        "executionId": "mx_1771243679378_83689",
+        "providerAgentId": "agent_1771243642939_71644",
+        "requesterAgentId": "agent_1771243634833_71222",
+        "price": 2,
+        "payerSpendableBefore": 20,
+        "payerSpendableAfter": 18,
+        "ownerClaimable": 0.8,
+        "operatingReserve": 0.8,
+        "lockedSafety": 0.4
+      }
+    },
+    {
+      "eventId": "evt_1771243679378_79784",
+      "eventType": "market_answer_delivered",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T12:07:59.378Z",
+      "payload": {
+        "askId": "ask_1771243679377_10019",
+        "executionId": "mx_1771243679378_83689",
+        "providerAgentId": "agent_1771243642939_71644",
+        "requesterAgentId": "agent_1771243634833_71222",
+        "price": 2,
+        "qualitySignal": 0.54
+      }
+    },
+    {
+      "eventId": "evt_1771244963378_72951",
+      "eventType": "peer_sync_ok",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T12:29:23.379Z",
+      "payload": {
+        "peerId": "self",
+        "url": "http://127.0.0.1:7340",
+        "remoteNodeId": "node_1771240256721_47407",
+        "totalChanges": 0,
+        "source": "auto"
+      }
+    },
+    {
+      "eventId": "evt_1771244976151_37897",
+      "eventType": "peer_added",
+      "actorRole": "owner",
+      "timestamp": "2026-02-16T12:29:36.151Z",
+      "payload": {
+        "peerId": "self-loop",
+        "url": "http://127.0.0.1:7340"
+      }
+    },
+    {
+      "eventId": "evt_1771244976250_36419",
+      "eventType": "peer_sync_ok",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T12:29:36.250Z",
+      "payload": {
+        "peerId": "self-loop",
+        "url": "http://127.0.0.1:7340",
+        "remoteNodeId": "node_1771240256721_47407",
+        "totalChanges": 0,
+        "source": "manual"
+      }
+    },
+    {
+      "eventId": "evt_1771245105833_73311",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T12:31:45.833Z",
+      "payload": {
+        "agentId": "agent_1771245105833_16655",
+        "name": "geo-sync-agent",
+        "topics": [
+          "global",
+          "mesh"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771245118020_54272",
+      "eventType": "peer_added",
+      "actorRole": "owner",
+      "timestamp": "2026-02-16T12:31:58.020Z",
+      "payload": {
+        "peerId": "earth-west",
+        "url": "http://127.0.0.1:7340"
+      }
+    },
+    {
+      "eventId": "evt_1771245118139_36809",
+      "eventType": "peer_sync_ok",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T12:31:58.139Z",
+      "payload": {
+        "peerId": "earth-west",
+        "url": "http://127.0.0.1:7340",
+        "remoteNodeId": "node_1771240256721_47407",
+        "totalChanges": 73,
+        "source": "manual"
+      }
+    },
+    {
+      "eventId": "evt_1771245131753_15037",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-16T12:32:11.753Z",
+      "payload": {
+        "agentId": "agent_1771245131753_65174",
+        "name": "geo-node2-agent",
+        "topics": [
+          "remote"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771245132239_89477",
+      "eventType": "peer_added",
+      "actorRole": "owner",
+      "timestamp": "2026-02-16T12:32:12.239Z",
+      "payload": {
+        "peerId": "earth-east",
+        "url": "http://127.0.0.1:7355"
+      }
+    },
+    {
+      "eventId": "evt_1771245137983_17981",
+      "eventType": "peer_sync_ok",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T12:32:17.983Z",
+      "payload": {
+        "peerId": "earth-west",
+        "url": "http://127.0.0.1:7340",
+        "remoteNodeId": "node_1771240256721_47407",
+        "totalChanges": 4,
+        "source": "auto"
+      }
+    },
+    {
+      "eventId": "evt_1771245137990_83389",
+      "eventType": "peer_sync_failed",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T12:32:17.990Z",
+      "payload": {
+        "peerId": "self",
+        "url": "http://127.0.0.1:7340",
+        "error": "snapshot failed (401): {\"error\":\"Unauthorized: invalid x-mammoth-token\"}",
+        "source": "auto"
+      }
+    },
+    {
+      "eventId": "evt_1771245137994_16633",
+      "eventType": "peer_sync_failed",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T12:32:17.994Z",
+      "payload": {
+        "peerId": "self-loop",
+        "url": "http://127.0.0.1:7340",
+        "error": "snapshot failed (401): {\"error\":\"Unauthorized: invalid x-mammoth-token\"}",
+        "source": "auto"
+      }
+    },
+    {
+      "eventId": "evt_1771245140351_46870",
+      "eventType": "peer_sync_ok",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T12:32:20.351Z",
+      "payload": {
+        "peerId": "earth-east",
+        "url": "http://127.0.0.1:7355",
+        "remoteNodeId": "node_1771245077938_4027",
+        "totalChanges": 8,
+        "source": "auto"
+      }
+    },
+    {
+      "eventId": "evt_1771245144422_63545",
+      "eventType": "peer_sync_ok",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T12:32:24.422Z",
+      "payload": {
+        "peerId": "earth-east",
+        "url": "http://127.0.0.1:7355",
+        "remoteNodeId": "node_1771245077938_4027",
+        "totalChanges": 0,
+        "source": "manual"
+      }
+    },
+    {
+      "eventId": "evt_1771245157983_27235",
+      "eventType": "peer_sync_ok",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T12:32:37.983Z",
+      "payload": {
+        "peerId": "earth-west",
+        "url": "http://127.0.0.1:7340",
+        "remoteNodeId": "node_1771240256721_47407",
+        "totalChanges": 5,
+        "source": "auto"
+      }
+    },
+    {
+      "eventId": "evt_1771245157990_25959",
+      "eventType": "peer_sync_failed",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T12:32:37.990Z",
+      "payload": {
+        "peerId": "self",
+        "url": "http://127.0.0.1:7340",
+        "error": "snapshot failed (401): {\"error\":\"Unauthorized: invalid x-mammoth-token\"}",
+        "source": "auto"
+      }
+    },
+    {
+      "eventId": "evt_1771245157994_16500",
+      "eventType": "peer_sync_failed",
+      "actorRole": "system",
+      "timestamp": "2026-02-16T12:32:37.994Z",
+      "payload": {
+        "peerId": "self-loop",
+        "url": "http://127.0.0.1:7340",
+        "error": "snapshot failed (401): {\"error\":\"Unauthorized: invalid x-mammoth-token\"}",
+        "source": "auto"
+      }
+    }
+  ]
+}

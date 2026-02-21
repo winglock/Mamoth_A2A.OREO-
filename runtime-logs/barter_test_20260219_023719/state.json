@@ -1,0 +1,424 @@
+{
+  "meta": {
+    "version": "0.3.0",
+    "createdAt": "2026-02-18T17:37:19.757Z",
+    "nodeId": "node_1771436239758_92064"
+  },
+  "config": {
+    "claimCooldownSec": 86400,
+    "maxRunBaseFee": 100000,
+    "peerSyncIntervalSec": 20,
+    "peerSyncTimeoutMs": 7000
+  },
+  "agents": {
+    "agent_1771436241639_12140": {
+      "agentId": "agent_1771436241639_12140",
+      "name": "owner-agent",
+      "topics": [
+        "backend",
+        "review"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.49,
+      "treasury": {
+        "ownerClaimable": 0,
+        "operatingReserve": 0,
+        "lockedSafety": 0,
+        "claimPending": 0,
+        "assets": {
+          "USDC": {
+            "ownerClaimable": 0,
+            "operatingReserve": 0,
+            "lockedSafety": 0,
+            "claimPending": 0
+          },
+          "USDT": {
+            "ownerClaimable": 0,
+            "operatingReserve": 0,
+            "lockedSafety": 0,
+            "claimPending": 0
+          }
+        }
+      },
+      "wallet": {
+        "spendable": 0,
+        "spent": 0,
+        "earnedGross": 0,
+        "assets": {
+          "USDC": 0,
+          "USDT": 0
+        },
+        "spentAssets": {
+          "USDC": 0,
+          "USDT": 0
+        },
+        "earnedGrossAssets": {
+          "USDC": 0,
+          "USDT": 0
+        },
+        "addresses": {
+          "eth": "0x0e63d12768237882b12f6f949276ddbea445dca4"
+        }
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0,
+        "blockedSenders": []
+      },
+      "createdAt": "2026-02-18T17:37:21.641Z",
+      "updatedAt": "2026-02-18T17:37:22.302Z"
+    },
+    "agent_1771436241827_27433": {
+      "agentId": "agent_1771436241827_27433",
+      "name": "buyer-agent",
+      "topics": [
+        "backend"
+      ],
+      "status": "ACTIVE",
+      "reputation": 0.54,
+      "treasury": {
+        "ownerClaimable": 0,
+        "operatingReserve": 0,
+        "lockedSafety": 0,
+        "claimPending": 0,
+        "assets": {
+          "USDC": {
+            "ownerClaimable": 0,
+            "operatingReserve": 0,
+            "lockedSafety": 0,
+            "claimPending": 0
+          },
+          "USDT": {
+            "ownerClaimable": 0,
+            "operatingReserve": 0,
+            "lockedSafety": 0,
+            "claimPending": 0
+          }
+        }
+      },
+      "wallet": {
+        "spendable": 0,
+        "spent": 0,
+        "earnedGross": 0,
+        "assets": {
+          "USDC": 0,
+          "USDT": 0
+        },
+        "spentAssets": {
+          "USDC": 0,
+          "USDT": 0
+        },
+        "earnedGrossAssets": {
+          "USDC": 0,
+          "USDT": 0
+        },
+        "addresses": {
+          "eth": "0x492246db1e1d1cb25fa5bd610d9e777e1efbcd14"
+        }
+      },
+      "policy": {
+        "autoRefuseMinReputation": 0,
+        "blockedSenders": []
+      },
+      "createdAt": "2026-02-18T17:37:21.827Z",
+      "updatedAt": "2026-02-18T17:37:22.302Z"
+    }
+  },
+  "intents": {},
+  "actions": {},
+  "messages": {},
+  "claims": {},
+  "peers": {},
+  "market": {
+    "offers": {
+      "offer_1771436241942_23023": {
+        "offerId": "offer_1771436241942_23023",
+        "agentId": "agent_1771436241639_12140",
+        "topic": "backend",
+        "mode": "BARTER",
+        "asset": "CREDIT",
+        "pricePerQuestion": 0,
+        "qualityHint": 0.7,
+        "barterRequest": "다른 프로젝트 PR 리뷰 1회",
+        "barterDueHours": 48,
+        "status": "ACTIVE",
+        "createdAt": "2026-02-18T17:37:21.942Z",
+        "updatedAt": "2026-02-18T17:37:21.942Z"
+      }
+    },
+    "asks": {
+      "ask_1771436242066_84124": {
+        "askId": "ask_1771436242066_84124",
+        "requesterAgentId": "agent_1771436241827_27433",
+        "topic": "backend",
+        "question": "캐시 레이어 설계 체크해줘",
+        "asset": "CREDIT",
+        "maxBudget": 0,
+        "strategy": "best_value",
+        "status": "DELIVERED",
+        "selectedOfferId": "offer_1771436241942_23023",
+        "selectedProviderAgentId": "agent_1771436241639_12140",
+        "selectedMode": "BARTER",
+        "selectedPrice": 0,
+        "modePreference": "BARTER",
+        "barterOffer": "너 프로젝트에 모니터링 대시보드 구성 도와줄게",
+        "answer": "[Collaborative answer] owner-agent answered on backend. Question: \"캐시 레이어 설계 체크해줘\". Confidence 50%. Includes summary, checks, and risks.",
+        "confidence": 0.5,
+        "createdAt": "2026-02-18T17:37:22.066Z",
+        "updatedAt": "2026-02-18T17:37:22.066Z",
+        "deliveredAt": "2026-02-18T17:37:22.066Z"
+      }
+    },
+    "executions": {
+      "mx_1771436242066_76041": {
+        "executionId": "mx_1771436242066_76041",
+        "askId": "ask_1771436242066_84124",
+        "requesterAgentId": "agent_1771436241827_27433",
+        "providerAgentId": "agent_1771436241639_12140",
+        "offerId": "offer_1771436241942_23023",
+        "mode": "BARTER",
+        "asset": "CREDIT",
+        "price": 0,
+        "qualitySignal": 0.5,
+        "answer": "[Collaborative answer] owner-agent answered on backend. Question: \"캐시 레이어 설계 체크해줘\". Confidence 50%. Includes summary, checks, and risks.",
+        "repBefore": 0.5,
+        "repAfter": 0.48,
+        "obligationId": "obg_1771436242066_32063",
+        "settlement": {
+          "kind": "BARTER",
+          "asset": "CREDIT",
+          "price": 0,
+          "payerSpendableBefore": 0,
+          "payerSpendableAfter": 0,
+          "ownerClaimable": 0,
+          "operatingReserve": 0,
+          "lockedSafety": 0,
+          "obligationId": "obg_1771436242066_32063",
+          "barterRequest": "다른 프로젝트 PR 리뷰 1회",
+          "barterOffer": "너 프로젝트에 모니터링 대시보드 구성 도와줄게",
+          "dueAt": "2026-02-20T17:37:22.066Z"
+        },
+        "createdAt": "2026-02-18T17:37:22.066Z"
+      }
+    },
+    "obligations": {
+      "obg_1771436242066_32063": {
+        "obligationId": "obg_1771436242066_32063",
+        "askId": "ask_1771436242066_84124",
+        "executionId": "mx_1771436242066_76041",
+        "debtorAgentId": "agent_1771436241827_27433",
+        "creditorAgentId": "agent_1771436241639_12140",
+        "status": "FULFILLED",
+        "topic": "backend",
+        "barterRequest": "다른 프로젝트 PR 리뷰 1회",
+        "barterOffer": "너 프로젝트에 모니터링 대시보드 구성 도와줄게",
+        "barterDueHours": 48,
+        "dueAt": "2026-02-20T17:37:22.066Z",
+        "proof": "Grafana alert 8개 설정 완료",
+        "submittedAt": "2026-02-18T17:37:22.184Z",
+        "reviewedAt": "2026-02-18T17:37:22.302Z",
+        "decision": "ACCEPT",
+        "reviewNote": "완료 확인",
+        "createdAt": "2026-02-18T17:37:22.066Z",
+        "updatedAt": "2026-02-18T17:37:22.302Z",
+        "delivery": {}
+      }
+    }
+  },
+  "platform": {
+    "label": "mammoth_protocol",
+    "taxBps": 250,
+    "treasury": {
+      "CREDIT": 0,
+      "assets": {
+        "USDC": 0,
+        "USDT": 0
+      }
+    }
+  },
+  "crypto": {
+    "deposits": {}
+  },
+  "events": [
+    {
+      "eventId": "evt_1771436241641_21309",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T17:37:21.641Z",
+      "payload": {
+        "agentId": "agent_1771436241639_12140",
+        "name": "owner-agent",
+        "topics": [
+          "backend",
+          "review"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771436241641_3350",
+      "eventType": "agent_wallet_generated",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:37:21.641Z",
+      "payload": {
+        "agentId": "agent_1771436241639_12140",
+        "chain": "ETH",
+        "address": "0x0e63d12768237882b12f6f949276ddbea445dca4",
+        "mode": "auto_on_register"
+      }
+    },
+    {
+      "eventId": "evt_1771436241827_10959",
+      "eventType": "agent_registered",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T17:37:21.827Z",
+      "payload": {
+        "agentId": "agent_1771436241827_27433",
+        "name": "buyer-agent",
+        "topics": [
+          "backend"
+        ]
+      }
+    },
+    {
+      "eventId": "evt_1771436241827_64920",
+      "eventType": "agent_wallet_generated",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:37:21.827Z",
+      "payload": {
+        "agentId": "agent_1771436241827_27433",
+        "chain": "ETH",
+        "address": "0x492246db1e1d1cb25fa5bd610d9e777e1efbcd14",
+        "mode": "auto_on_register"
+      }
+    },
+    {
+      "eventId": "evt_1771436241942_51949",
+      "eventType": "market_offer_upserted",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T17:37:21.942Z",
+      "payload": {
+        "offerId": "offer_1771436241942_23023",
+        "agentId": "agent_1771436241639_12140",
+        "topic": "backend",
+        "mode": "BARTER",
+        "asset": "CREDIT",
+        "pricePerQuestion": 0,
+        "barterRequest": "다른 프로젝트 PR 리뷰 1회",
+        "barterDueHours": 48
+      }
+    },
+    {
+      "eventId": "evt_1771436242066_40470",
+      "eventType": "market_ask_created",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T17:37:22.066Z",
+      "payload": {
+        "askId": "ask_1771436242066_84124",
+        "requesterAgentId": "agent_1771436241827_27433",
+        "topic": "backend",
+        "asset": "CREDIT",
+        "maxBudget": 0,
+        "modePreference": "BARTER"
+      }
+    },
+    {
+      "eventId": "evt_1771436242066_43784",
+      "eventType": "market_quote_selected",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:37:22.066Z",
+      "payload": {
+        "askId": "ask_1771436242066_84124",
+        "offerId": "offer_1771436241942_23023",
+        "requesterAgentId": "agent_1771436241827_27433",
+        "providerAgentId": "agent_1771436241639_12140",
+        "price": 0,
+        "mode": "BARTER",
+        "asset": "CREDIT",
+        "barterRequest": "다른 프로젝트 PR 리뷰 1회"
+      }
+    },
+    {
+      "eventId": "evt_1771436242066_92521",
+      "eventType": "market_obligation_created",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:37:22.066Z",
+      "payload": {
+        "obligationId": "obg_1771436242066_32063",
+        "askId": "ask_1771436242066_84124",
+        "executionId": "mx_1771436242066_76041",
+        "debtorAgentId": "agent_1771436241827_27433",
+        "creditorAgentId": "agent_1771436241639_12140",
+        "barterRequest": "다른 프로젝트 PR 리뷰 1회",
+        "barterOffer": "너 프로젝트에 모니터링 대시보드 구성 도와줄게",
+        "dueAt": "2026-02-20T17:37:22.066Z"
+      }
+    },
+    {
+      "eventId": "evt_1771436242066_77338",
+      "eventType": "market_settlement_posted",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:37:22.066Z",
+      "payload": {
+        "askId": "ask_1771436242066_84124",
+        "executionId": "mx_1771436242066_76041",
+        "providerAgentId": "agent_1771436241639_12140",
+        "requesterAgentId": "agent_1771436241827_27433",
+        "asset": "CREDIT",
+        "mode": "BARTER",
+        "kind": "BARTER",
+        "price": 0,
+        "payerSpendableBefore": 0,
+        "payerSpendableAfter": 0,
+        "ownerClaimable": 0,
+        "operatingReserve": 0,
+        "lockedSafety": 0,
+        "obligationId": "obg_1771436242066_32063",
+        "barterRequest": "다른 프로젝트 PR 리뷰 1회",
+        "barterOffer": "너 프로젝트에 모니터링 대시보드 구성 도와줄게",
+        "dueAt": "2026-02-20T17:37:22.066Z"
+      }
+    },
+    {
+      "eventId": "evt_1771436242066_92013",
+      "eventType": "market_answer_delivered",
+      "actorRole": "system",
+      "timestamp": "2026-02-18T17:37:22.066Z",
+      "payload": {
+        "askId": "ask_1771436242066_84124",
+        "executionId": "mx_1771436242066_76041",
+        "providerAgentId": "agent_1771436241639_12140",
+        "requesterAgentId": "agent_1771436241827_27433",
+        "asset": "CREDIT",
+        "price": 0,
+        "mode": "BARTER",
+        "qualitySignal": 0.5,
+        "obligationId": "obg_1771436242066_32063"
+      }
+    },
+    {
+      "eventId": "evt_1771436242184_44740",
+      "eventType": "market_obligation_submitted",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T17:37:22.184Z",
+      "payload": {
+        "obligationId": "obg_1771436242066_32063",
+        "agentId": "agent_1771436241827_27433",
+        "creditorAgentId": "agent_1771436241639_12140"
+      }
+    },
+    {
+      "eventId": "evt_1771436242302_62468",
+      "eventType": "market_obligation_fulfilled",
+      "actorRole": "agent",
+      "timestamp": "2026-02-18T17:37:22.302Z",
+      "payload": {
+        "obligationId": "obg_1771436242066_32063",
+        "debtorAgentId": "agent_1771436241827_27433",
+        "creditorAgentId": "agent_1771436241639_12140",
+        "debtorRepBefore": 0.5,
+        "debtorRepAfter": 0.54,
+        "creditorRepBefore": 0.48,
+        "creditorRepAfter": 0.49
+      }
+    }
+  ]
+}
